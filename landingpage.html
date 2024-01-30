@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #3498db;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        #main-header {
+            background: #3498db;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #2c3e50 4px solid;
+        }
+
+        #main-header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 1.6em;
+        }
+
+        #main-header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        #main-header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        #main-header a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        #main-header #nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: url('ba.jpg') no-repeat 0 -200px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 3em;
+        }
+
+        .main-features {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .feature h3 {
+            margin: 10px 0;
+        }
+
+        #newsletter {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        #newsletter h1 {
+            margin-top: 0;
+        }
+
+        #newsletter form {
+            margin: 20px 0;
+        }
+
+        #newsletter input[type="email"] {
+            padding: 10px;
+            width: 50%;
+        }
+
+        #newsletter button {
+            padding: 10px 20px;
+        }
+
+        #testimonial {
+            padding: 50px 0;
+            background: #1d64e85a;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        #contact {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        #contact h1 {
+            margin-bottom: 40px;
+        }
+
+        #contact div {
+            display: flex;
+            justify-content: center; /* Center the child elements */
+            flex-wrap: wrap; /* Wrap the child elements if they exceed the container width */
+        }
+
+        #contact div div {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            padding: 20px 0;
+            background: #3498db;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Express Inn</h1>
+        </div>
+    </header>
+
+    <nav id="main-header">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to Our Luxury Hotel</h1>
+            <p>Experience the ultimate in comfort and luxury</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="main-features">
+                <div class="feature">
+                    <img src="l.png" alt="Icon 1">
+                    <h3>Luxurious Rooms</h3>
+                    <p>Experience the highest quality in comfort and amenities.</p>
+                </div>
+                <div class="feature">
+                    <img src="d.png" alt="Icon 2">
+                    <h3>World-Class Dining</h3>
+                    <p>Indulge in a variety of gourmet dishes prepared by our renowned chefs.</p>
+                </div>
+                <div class="feature">
+                    <img src="1.png" alt="Icon 3">
+                    <h3>Stunning Views</h3>
+                    <p>Enjoy breathtaking views from our well-appointed rooms and suites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to Our Newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="container">
+            <h1>What Our Guests Say</h1>
+            <p>"Amazing experience! The staff was friendly, and the facilities were top-notch. Will definitely come back!"</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div>
+                <div>
+                    <h3>Visit Us</h3>
+                    <p>123 Main Street, Cityville</p>
+                </div>
+                <div>
+                    <h3>Email Us</h3>
+                    <p>info@Express Inn.com</p>
+                </div>
+                <div>
+                    <h3>Call Us</h3>
+                    <p>(123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Express Inn. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
